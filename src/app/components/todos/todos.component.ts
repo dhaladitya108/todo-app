@@ -10,6 +10,7 @@ import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 })
 export class TodosComponent implements OnInit {
   todos: Todo[];
+  faTrashAlt = faTrashAlt
   constructor(private todoservice: TodoService) {}
 
   ngOnInit(): void {

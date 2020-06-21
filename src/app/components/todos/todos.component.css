@@ -1,4 +1,9 @@
-completedTodo {
+.completedTodo {
   color: darkgray;
   text-decoration: line-through;
+}
+
+p {
+  margin: 0;
+  padding: 0;
 }

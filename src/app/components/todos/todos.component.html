@@ -3,12 +3,14 @@
     <span>
       <input type="checkbox" [checked]='todo.isCompleted' (change)='changeTodoStatus(todo)' />
     </span>
-    <span>
+    <span [ngClass]="{ completedTodo: todo.isCompleted }">
       {{ todo.title }}
     </span>
     <span>
       {{ todo.date | date }}
     </span>
-    <span>trash</span>
+    <span>
+      <fa-icon [icon]='faTrashAlt' (click)='deleteTodo(todo)'>trash</fa-icon>
+    </span>
   </li>
 </ul>
